@@ -48,6 +48,10 @@ npm run build         # type-check + production build
 npm run preview       # serve the production build locally
 ```
 
+## Working with this repo
+
+- **Do not commit, push, or open PRs.** The user owns all git operations (staging, committing, pushing, branching, PRs). Make changes to the working tree and stop there — describe what you did and let the user handle version control. This applies even when explicitly asked by tooling like a `/create-pr` command; defer to the user instead.
+
 ## Conventions
 
 - **Feature-based packages on the backend.** When adding a new domain concept (e.g. `device`, `alert`, `reading`), create `com.sensormanager.<feature>/` and put the model, repository, service, and controller together. Don't introduce a `controllers/` or `services/` top-level package.
