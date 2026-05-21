@@ -1,28 +1,48 @@
-import { useEffect, useState } from "react";
-import { fetchSensors, type Sensor } from "./api";
+import Co2Chart from "./components/Co2Chart";
+import HeroStats from "./components/HeroStats";
+import LocationCards from "./components/LocationCards";
+import TemperatureChart from "./components/TemperatureChart";
 
 export default function App() {
-  const [sensors, setSensors] = useState<Sensor[]>([]);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetchSensors()
-      .then(setSensors)
-      .catch((e: unknown) => setError(e instanceof Error ? e.message : "failed to load"));
-  }, []);
-
   return (
-    <main>
-      <h1>Sensor Manager</h1>
-      {error && <p role="alert">{error}</p>}
-      <ul>
-        {sensors.map((s) => (
-          <li key={s.id}>
-            <strong>{s.name}</strong> — {s.location ?? "unknown"} —{" "}
-            {s.online ? "online" : "offline"}
-          </li>
-        ))}
-      </ul>
-    </main>
+    <div className="page">
+      <SiteHeader />
+      <HeroStats />
+      <main className="content">
+        <LocationCards />
+        <TemperatureChart />
+        <Co2Chart />
+      </main>
+      <SiteFooter />
+    </div>
+  );
+}
+
+function SiteHeader() {
+  return (
+    <header className="topbar">
+      <div className="topbar-inner">
+        <a className="brand" href="/">
+          <span className="brand-mark" aria-hidden />
+          Sensor Manager
+        </a>
+        <nav>
+          <a href="#latest">Latest</a>
+          <a href="#temperature">Temperature</a>
+          <a href="#air">Air quality</a>
+        </nav>
+      </div>
+    </header>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="site-foot">
+      <div>
+        Built with Kotlin + Spring Boot and React. Data from a real home/lab
+        sensor deployment.
+      </div>
+    </footer>
   );
 }

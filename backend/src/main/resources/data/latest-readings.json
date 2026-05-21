@@ -1,0 +1,38 @@
+[
+  {
+    "locationId": 1,
+    "locationName": "Kids room",
+    "deviceHwid": "E05A1B9FF0F8",
+    "timestamp": "2024-05-14T19:19:44.000Z",
+    "indoorTempC": 24.52,
+    "humidityPct": null,
+    "pressureHpa": 1011.32,
+    "co2Ppm": null,
+    "breathVoc": null,
+    "iaqStatic": null
+  },
+  {
+    "locationId": 2,
+    "locationName": "Living room",
+    "deviceHwid": "E05A1BA208A8",
+    "timestamp": "2024-04-16T02:59:01.000Z",
+    "indoorTempC": 23.1,
+    "humidityPct": null,
+    "pressureHpa": 989.78,
+    "co2Ppm": null,
+    "breathVoc": null,
+    "iaqStatic": null
+  },
+  {
+    "locationId": 3,
+    "locationName": "Office",
+    "deviceHwid": "E05A1BA00F88",
+    "timestamp": "2024-05-14T19:20:00.000Z",
+    "indoorTempC": 26.08,
+    "humidityPct": 31.3,
+    "pressureHpa": 1011.51,
+    "co2Ppm": 2831.3,
+    "breathVoc": 98.81,
+    "iaqStatic": 283.13
+  }
+]
