@@ -109,7 +109,7 @@ npm run preview       # serve the production build locally
 ## Conventions
 
 - **Feature-based packages on the backend.** When adding a new domain concept (e.g. `alert`, `floorplan`), create `com.sensormanager.<feature>/` and put the model, repository interface, and impl(s) together. Don't introduce a `controllers/` or `services/` top-level package.
-- **Repository interfaces are the storage boundary.** Add a `Json*Repository` (and later a `Jdbc*Repository`) — never let other code import a concrete impl directly. Spring DI wires the interface.
+- **Repository interfaces are the storage boundary.** Add a `Json*Repository` (and later a `Jdbc*Repository`), declared `internal class` so the compiler — not just convention — prevents other code from importing the concrete impl. Spring DI wires the interface regardless of visibility.
 - **API shape.** REST under `/api/<resource>`. JSON field names follow Jackson defaults (camelCase). `Instant` serializes to ISO-8601 strings; `LocalDate` to `YYYY-MM-DD`. The TypeScript types for those fields are `string`.
 - **No secrets in `application.yml`.** Use environment variables or Spring profiles when wiring real config; commit only safe defaults.
 

@@ -5,7 +5,7 @@ import com.sensormanager.common.loadClasspathJson
 import org.springframework.stereotype.Repository
 
 @Repository
-class JsonStatsRepository(objectMapper: ObjectMapper) : StatsRepository {
+internal class JsonStatsRepository(objectMapper: ObjectMapper) : StatsRepository {
 
     private val cached: SensorStats = loadClasspathJson(objectMapper, "data/stats.json")
 

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository
  * produced by `tools/build-data/parse-dump.mjs`.
  */
 @Repository
-class JsonLocationRepository(objectMapper: ObjectMapper) : LocationRepository {
+internal class JsonLocationRepository(objectMapper: ObjectMapper) : LocationRepository {
 
     private val cached: List<Location> = loadClasspathJson(objectMapper, "data/locations.json")
 

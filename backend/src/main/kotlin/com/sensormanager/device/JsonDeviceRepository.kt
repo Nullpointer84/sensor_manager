@@ -5,7 +5,7 @@ import com.sensormanager.common.loadClasspathJson
 import org.springframework.stereotype.Repository
 
 @Repository
-class JsonDeviceRepository(objectMapper: ObjectMapper) : DeviceRepository {
+internal class JsonDeviceRepository(objectMapper: ObjectMapper) : DeviceRepository {
 
     private val cached: List<Device> = loadClasspathJson(objectMapper, "data/devices.json")
 

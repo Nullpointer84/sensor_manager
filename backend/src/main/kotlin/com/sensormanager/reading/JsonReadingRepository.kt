@@ -5,7 +5,7 @@ import com.sensormanager.common.loadClasspathJson
 import org.springframework.stereotype.Repository
 
 @Repository
-class JsonReadingRepository(objectMapper: ObjectMapper) : ReadingRepository {
+internal class JsonReadingRepository(objectMapper: ObjectMapper) : ReadingRepository {
 
     private val latest: List<LatestReading> =
         loadClasspathJson(objectMapper, "data/latest-readings.json")
