@@ -1,18 +1,13 @@
 package com.sensormanager.stats
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.kotlin.readValue
-import org.springframework.core.io.ClassPathResource
+import com.sensormanager.common.loadClasspathJson
 import org.springframework.stereotype.Repository
 
 @Repository
-class JsonStatsRepository(private val objectMapper: ObjectMapper) : StatsRepository {
+class JsonStatsRepository(objectMapper: ObjectMapper) : StatsRepository {
 
-    private val cached: SensorStats by lazy {
-        ClassPathResource("data/stats.json").inputStream.use { input ->
-            objectMapper.readValue(input)
-        }
-    }
+    private val cached: SensorStats = loadClasspathJson(objectMapper, "data/stats.json")
 
     override fun stats(): SensorStats = cached
 }
