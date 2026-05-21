@@ -37,6 +37,13 @@ Json*Repository (today)               loads classpath data/*.json on first acces
 
 **Rule:** UI code only imports from `web/src/api.ts`. Backend services only depend on repository **interfaces**, never on the JSON impls directly. When we transition to a database, the only files that change are the repository implementations — `LandingController`, `api.ts`, and every React component stay untouched.
 
+### Contract safeguards
+
+Two tests enforce the layering claims at build time. Treat them as guardrails — update them in the same commit as any intentional API or validation change, don't loosen them to make a feature pass.
+
+- **[`LandingContractTest`](backend/src/test/kotlin/com/sensormanager/landing/LandingContractTest.kt)** hits every `/api/landing/*` endpoint via MockMvc and pins the exact field set per response, plus non-nullable types. Renamed field, removed field, type drift, moved path — any of those turns `./gradlew test` red.
+- **[`JsonSnapshotTest`](backend/src/test/kotlin/com/sensormanager/common/JsonSnapshotTest.kt)** pins the input validation on `loadJsonSnapshot`. The path-traversal defense is whitelist-only (`^[a-z0-9-]+$`); this test breaks if the whitelist is ever loosened.
+
 ## Data pipeline
 
 The source of truth for landing-page data is **`database/database.sql`** (mysqldump from the original "temperature" database — indoor environment readings Jan–May 2024). It is **not** loaded at runtime. Instead:
@@ -70,6 +77,7 @@ The "last 30 days" window is anchored to the **max timestamp in the data**, not 
 | `device` | `Device`, `DeviceRepository`, `JsonDeviceRepository` | One aggregate. |
 | `reading` | `LatestReading`, `TemperatureTrendPoint`, `Co2SummaryPoint`, `ReadingRepository`, `JsonReadingRepository` | Read-model query methods, not row-level access. |
 | `stats` | `SensorStats`, `StatsRepository`, `JsonStatsRepository` | Landing-page hero totals. |
+| `common` | `loadJsonSnapshot(om, name)` | Shared snapshot-loading helper used by every `Json*Repository`. Validates the name against `^[a-z0-9-]+$` and builds the classpath path internally, so callers can't escape the `data/` prefix. The only cross-cutting package allowed alongside the feature packages. |
 
 The repository interface methods are **query-shaped** (e.g. `temperatureTrend()`, `latestPerLocation()`), not row-level CRUD. When we move to a database the JDBC impl translates each method into one SQL query (or a view).
 
@@ -110,6 +118,7 @@ npm run preview       # serve the production build locally
 
 - **Feature-based packages on the backend.** When adding a new domain concept (e.g. `alert`, `floorplan`), create `com.sensormanager.<feature>/` and put the model, repository interface, and impl(s) together. Don't introduce a `controllers/` or `services/` top-level package.
 - **Repository interfaces are the storage boundary.** Add a `Json*Repository` (and later a `Jdbc*Repository`), declared `internal class` so the compiler — not just convention — prevents other code from importing the concrete impl. Spring DI wires the interface regardless of visibility.
+- **Snapshot loading goes through `loadJsonSnapshot(objectMapper, name)`.** Pass the bare snapshot name (e.g. `"locations"`), never a full path or a `.json` suffix. The helper builds the classpath path internally and validates the name against a strict whitelist. Load eagerly via a property initializer in the bean's constructor so a missing/malformed file fails startup instead of leaking as a 500.
 - **API shape.** REST under `/api/<resource>`. JSON field names follow Jackson defaults (camelCase). `Instant` serializes to ISO-8601 strings; `LocalDate` to `YYYY-MM-DD`. The TypeScript types for those fields are `string`.
 - **No secrets in `application.yml`.** Use environment variables or Spring profiles when wiring real config; commit only safe defaults.
 
