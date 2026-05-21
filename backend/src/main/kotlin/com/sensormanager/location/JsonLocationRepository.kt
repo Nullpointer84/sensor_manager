@@ -1,7 +1,7 @@
 package com.sensormanager.location
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.sensormanager.common.loadClasspathJson
+import com.sensormanager.common.loadJsonSnapshot
 import org.springframework.stereotype.Repository
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository
 @Repository
 internal class JsonLocationRepository(objectMapper: ObjectMapper) : LocationRepository {
 
-    private val cached: List<Location> = loadClasspathJson(objectMapper, "data/locations.json")
+    private val cached: List<Location> = loadJsonSnapshot(objectMapper, "locations")
 
     override fun findAll(): List<Location> = cached
 }
