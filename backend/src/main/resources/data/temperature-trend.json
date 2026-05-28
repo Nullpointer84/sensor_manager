@@ -1,0 +1,466 @@
+[
+  {
+    "date": "2024-04-14",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.19,
+    "minTempC": 22.12,
+    "maxTempC": 22.24
+  },
+  {
+    "date": "2024-04-14",
+    "locationId": 2,
+    "locationName": "Living room",
+    "meanTempC": 23.51,
+    "minTempC": 23.29,
+    "maxTempC": 23.71
+  },
+  {
+    "date": "2024-04-14",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 22.9,
+    "minTempC": 22.36,
+    "maxTempC": 23.42
+  },
+  {
+    "date": "2024-04-15",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.22,
+    "minTempC": 21.66,
+    "maxTempC": 22.62
+  },
+  {
+    "date": "2024-04-15",
+    "locationId": 2,
+    "locationName": "Living room",
+    "meanTempC": 23.87,
+    "minTempC": 23.07,
+    "maxTempC": 24.71
+  },
+  {
+    "date": "2024-04-15",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 23.57,
+    "minTempC": 22.04,
+    "maxTempC": 24.71
+  },
+  {
+    "date": "2024-04-16",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.45,
+    "minTempC": 21.8,
+    "maxTempC": 22.85
+  },
+  {
+    "date": "2024-04-16",
+    "locationId": 2,
+    "locationName": "Living room",
+    "meanTempC": 23.21,
+    "minTempC": 23.1,
+    "maxTempC": 23.27
+  },
+  {
+    "date": "2024-04-16",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 24.75,
+    "minTempC": 22.68,
+    "maxTempC": 25.98
+  },
+  {
+    "date": "2024-04-17",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.97,
+    "minTempC": 22.28,
+    "maxTempC": 23.37
+  },
+  {
+    "date": "2024-04-17",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.36,
+    "minTempC": 24.47,
+    "maxTempC": 26.21
+  },
+  {
+    "date": "2024-04-18",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 23.08,
+    "minTempC": 22.75,
+    "maxTempC": 23.42
+  },
+  {
+    "date": "2024-04-18",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.46,
+    "minTempC": 25,
+    "maxTempC": 25.91
+  },
+  {
+    "date": "2024-04-19",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.5,
+    "minTempC": 22.04,
+    "maxTempC": 22.98
+  },
+  {
+    "date": "2024-04-19",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.27,
+    "minTempC": 24.81,
+    "maxTempC": 25.56
+  },
+  {
+    "date": "2024-04-20",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.31,
+    "minTempC": 21.65,
+    "maxTempC": 22.92
+  },
+  {
+    "date": "2024-04-20",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.06,
+    "minTempC": 23.64,
+    "maxTempC": 26.26
+  },
+  {
+    "date": "2024-04-21",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.59,
+    "minTempC": 24.42,
+    "maxTempC": 26.74
+  },
+  {
+    "date": "2024-04-22",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.23,
+    "minTempC": 24.63,
+    "maxTempC": 25.84
+  },
+  {
+    "date": "2024-04-23",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 24.58,
+    "minTempC": 21.82,
+    "maxTempC": 26.32
+  },
+  {
+    "date": "2024-04-24",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 24.81,
+    "minTempC": 24.2,
+    "maxTempC": 25.7
+  },
+  {
+    "date": "2024-04-25",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 24.85,
+    "minTempC": 23.2,
+    "maxTempC": 26.57
+  },
+  {
+    "date": "2024-04-26",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 24.92,
+    "minTempC": 24.47,
+    "maxTempC": 25.6
+  },
+  {
+    "date": "2024-04-27",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 24.82,
+    "minTempC": 23.24,
+    "maxTempC": 25.55
+  },
+  {
+    "date": "2024-04-28",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 21.83,
+    "minTempC": 19.99,
+    "maxTempC": 23.21
+  },
+  {
+    "date": "2024-04-28",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.41,
+    "minTempC": 24.55,
+    "maxTempC": 26.23
+  },
+  {
+    "date": "2024-04-29",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 23.2,
+    "minTempC": 20.84,
+    "maxTempC": 24.53
+  },
+  {
+    "date": "2024-04-29",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.97,
+    "minTempC": 24.47,
+    "maxTempC": 27.11
+  },
+  {
+    "date": "2024-04-30",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.36,
+    "minTempC": 21.2,
+    "maxTempC": 24.23
+  },
+  {
+    "date": "2024-04-30",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.03,
+    "minTempC": 24.66,
+    "maxTempC": 26.81
+  },
+  {
+    "date": "2024-05-01",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.75,
+    "minTempC": 21.08,
+    "maxTempC": 24.5
+  },
+  {
+    "date": "2024-05-01",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.07,
+    "minTempC": 24.58,
+    "maxTempC": 27.09
+  },
+  {
+    "date": "2024-05-02",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 22.95,
+    "minTempC": 20.86,
+    "maxTempC": 24.72
+  },
+  {
+    "date": "2024-05-02",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.6,
+    "minTempC": 25.34,
+    "maxTempC": 27.49
+  },
+  {
+    "date": "2024-05-03",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 23.86,
+    "minTempC": 22.31,
+    "maxTempC": 25.07
+  },
+  {
+    "date": "2024-05-03",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 27.09,
+    "minTempC": 26.05,
+    "maxTempC": 28.2
+  },
+  {
+    "date": "2024-05-04",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 25.1,
+    "minTempC": 24.29,
+    "maxTempC": 25.64
+  },
+  {
+    "date": "2024-05-04",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.8,
+    "minTempC": 24.08,
+    "maxTempC": 27.22
+  },
+  {
+    "date": "2024-05-05",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 25.25,
+    "minTempC": 24.66,
+    "maxTempC": 26.07
+  },
+  {
+    "date": "2024-05-05",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.73,
+    "minTempC": 24.16,
+    "maxTempC": 26.86
+  },
+  {
+    "date": "2024-05-06",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 24.85,
+    "minTempC": 24.61,
+    "maxTempC": 25.14
+  },
+  {
+    "date": "2024-05-06",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.76,
+    "minTempC": 24.67,
+    "maxTempC": 26.32
+  },
+  {
+    "date": "2024-05-07",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 25.26,
+    "minTempC": 24.48,
+    "maxTempC": 26.21
+  },
+  {
+    "date": "2024-05-07",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.96,
+    "minTempC": 25.65,
+    "maxTempC": 29.87
+  },
+  {
+    "date": "2024-05-08",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 25.72,
+    "minTempC": 25.09,
+    "maxTempC": 26.52
+  },
+  {
+    "date": "2024-05-08",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.62,
+    "minTempC": 25.86,
+    "maxTempC": 27.63
+  },
+  {
+    "date": "2024-05-09",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 25.44,
+    "minTempC": 25.18,
+    "maxTempC": 25.98
+  },
+  {
+    "date": "2024-05-09",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.48,
+    "minTempC": 25.54,
+    "maxTempC": 27.31
+  },
+  {
+    "date": "2024-05-10",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 25.12,
+    "minTempC": 24.94,
+    "maxTempC": 25.32
+  },
+  {
+    "date": "2024-05-10",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.44,
+    "minTempC": 25.98,
+    "maxTempC": 27.3
+  },
+  {
+    "date": "2024-05-11",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 24.64,
+    "minTempC": 23.9,
+    "maxTempC": 25.39
+  },
+  {
+    "date": "2024-05-11",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 25.86,
+    "minTempC": 24.33,
+    "maxTempC": 28.91
+  },
+  {
+    "date": "2024-05-12",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 24.96,
+    "minTempC": 24.35,
+    "maxTempC": 26.09
+  },
+  {
+    "date": "2024-05-12",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.66,
+    "minTempC": 24.85,
+    "maxTempC": 30.21
+  },
+  {
+    "date": "2024-05-13",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 25.2,
+    "minTempC": 24.3,
+    "maxTempC": 26.16
+  },
+  {
+    "date": "2024-05-13",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 26.39,
+    "minTempC": 25.23,
+    "maxTempC": 27.12
+  },
+  {
+    "date": "2024-05-14",
+    "locationId": 1,
+    "locationName": "Kids room",
+    "meanTempC": 25.28,
+    "minTempC": 24.29,
+    "maxTempC": 26.56
+  },
+  {
+    "date": "2024-05-14",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanTempC": 27.28,
+    "minTempC": 25.15,
+    "maxTempC": 30.35
+  }
+]

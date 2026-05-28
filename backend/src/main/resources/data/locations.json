@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Kids room",
+    "description": "The kids room",
+    "currentDeviceHwid": "E05A1B9FF0F8",
+    "currentDeviceSince": "2024-01-23T07:40:17.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Living room",
+    "description": "Living room",
+    "currentDeviceHwid": "E05A1BA208A8",
+    "currentDeviceSince": "2024-01-21T18:26:58.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Office",
+    "description": "Office",
+    "currentDeviceHwid": "E05A1BA00F88",
+    "currentDeviceSince": "2024-01-28T16:00:00.000Z"
+  }
+]

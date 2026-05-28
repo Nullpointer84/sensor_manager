@@ -1,0 +1,219 @@
+[
+  {
+    "date": "2024-04-14",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1063.8,
+    "peakCo2Ppm": 1269.1
+  },
+  {
+    "date": "2024-04-15",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1459.1,
+    "peakCo2Ppm": 3739.3
+  },
+  {
+    "date": "2024-04-16",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1107.3,
+    "peakCo2Ppm": 2054.4
+  },
+  {
+    "date": "2024-04-17",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1136.4,
+    "peakCo2Ppm": 2510.3
+  },
+  {
+    "date": "2024-04-18",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1109.1,
+    "peakCo2Ppm": 2232.1
+  },
+  {
+    "date": "2024-04-19",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1193.5,
+    "peakCo2Ppm": 2267.7
+  },
+  {
+    "date": "2024-04-20",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1847.6,
+    "peakCo2Ppm": 4787.7
+  },
+  {
+    "date": "2024-04-21",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2309.6,
+    "peakCo2Ppm": 3466
+  },
+  {
+    "date": "2024-04-22",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1630.1,
+    "peakCo2Ppm": 2685.7
+  },
+  {
+    "date": "2024-04-23",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1578.1,
+    "peakCo2Ppm": 3017.6
+  },
+  {
+    "date": "2024-04-24",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1371.6,
+    "peakCo2Ppm": 2679.6
+  },
+  {
+    "date": "2024-04-25",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2055,
+    "peakCo2Ppm": 4179.8
+  },
+  {
+    "date": "2024-04-26",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2532,
+    "peakCo2Ppm": 4050.4
+  },
+  {
+    "date": "2024-04-27",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1643.9,
+    "peakCo2Ppm": 2371
+  },
+  {
+    "date": "2024-04-28",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1955,
+    "peakCo2Ppm": 4029.4
+  },
+  {
+    "date": "2024-04-29",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2166.8,
+    "peakCo2Ppm": 3791.5
+  },
+  {
+    "date": "2024-04-30",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1168,
+    "peakCo2Ppm": 2419.8
+  },
+  {
+    "date": "2024-05-01",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1419.4,
+    "peakCo2Ppm": 4063.2
+  },
+  {
+    "date": "2024-05-02",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2479,
+    "peakCo2Ppm": 4268.3
+  },
+  {
+    "date": "2024-05-03",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1498.4,
+    "peakCo2Ppm": 2869.7
+  },
+  {
+    "date": "2024-05-04",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2323.2,
+    "peakCo2Ppm": 3479.3
+  },
+  {
+    "date": "2024-05-05",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2007.8,
+    "peakCo2Ppm": 3813.1
+  },
+  {
+    "date": "2024-05-06",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2315.1,
+    "peakCo2Ppm": 3135.4
+  },
+  {
+    "date": "2024-05-07",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1579.9,
+    "peakCo2Ppm": 2621.6
+  },
+  {
+    "date": "2024-05-08",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1824.3,
+    "peakCo2Ppm": 3419.9
+  },
+  {
+    "date": "2024-05-09",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2226.1,
+    "peakCo2Ppm": 3392
+  },
+  {
+    "date": "2024-05-10",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1404.5,
+    "peakCo2Ppm": 3655.6
+  },
+  {
+    "date": "2024-05-11",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1464.9,
+    "peakCo2Ppm": 3042.5
+  },
+  {
+    "date": "2024-05-12",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2172.8,
+    "peakCo2Ppm": 4220.2
+  },
+  {
+    "date": "2024-05-13",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 2129.4,
+    "peakCo2Ppm": 3956.5
+  },
+  {
+    "date": "2024-05-14",
+    "locationId": 3,
+    "locationName": "Office",
+    "meanCo2Ppm": 1499.9,
+    "peakCo2Ppm": 2831.3
+  }
+]

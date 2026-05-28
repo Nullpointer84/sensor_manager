@@ -1,0 +1,37 @@
+[
+  {
+    "hwid": "08D1F9CE0E78",
+    "currentLocationId": null,
+    "currentLocationName": null,
+    "firstSeenAt": "2024-01-04T17:29:28.000Z",
+    "lastSeenAt": "2024-01-05T15:42:11.000Z"
+  },
+  {
+    "hwid": "E05A1B9FF0F8",
+    "currentLocationId": 1,
+    "currentLocationName": "Kids room",
+    "firstSeenAt": "2024-01-23T07:40:17.000Z",
+    "lastSeenAt": "2024-05-14T19:19:44.000Z"
+  },
+  {
+    "hwid": "E05A1BA00F88",
+    "currentLocationId": 3,
+    "currentLocationName": "Office",
+    "firstSeenAt": "2024-01-23T07:24:27.000Z",
+    "lastSeenAt": "2024-05-14T19:20:00.000Z"
+  },
+  {
+    "hwid": "E05A1BA208A8",
+    "currentLocationId": 2,
+    "currentLocationName": "Living room",
+    "firstSeenAt": "2024-02-18T18:10:05.000Z",
+    "lastSeenAt": "2024-04-16T02:59:01.000Z"
+  },
+  {
+    "hwid": "FCB467C53548",
+    "currentLocationId": null,
+    "currentLocationName": null,
+    "firstSeenAt": null,
+    "lastSeenAt": null
+  }
+]
