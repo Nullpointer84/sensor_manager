@@ -9,6 +9,9 @@ backend/         Kotlin + Spring Boot 3 service (Gradle Kotlin DSL, JDK 21)
 web/             React 19 + TypeScript SPA (Vite 6)
 database/        Historical mysqldump used as the seed data source
 tools/build-data/ One-off Node script that turns the dump into JSON for the backend
+Dockerfile       Single production image: backend jar with the built SPA baked in
+fly.toml         Fly.io app config (region arn, scale-to-zero, /actuator/health check)
+.github/workflows/ci.yml  CI/CD: tests on PR/push, deploy to Fly.io on green main
 ```
 
 The two builds (backend, web) are independent — there is no top-level Gradle or workspace file. Run each from its own directory.
@@ -110,6 +113,15 @@ npm run build         # type-check + production build
 npm run preview       # serve the production build locally
 ```
 
+## Deployment & CI/CD
+
+Decided and in place — see [DEPLOYMENT.md](DEPLOYMENT.md) for the runbook.
+
+- **One Docker container** ([Dockerfile](Dockerfile)): the backend serves the API and the production SPA from the same origin, so the client's relative `/api/...` calls need no CORS or configured backend origin. The SPA is copied into `src/main/resources/static/` **inside the Docker build only** — that path is gitignored and must never be committed.
+- **Platform: Fly.io** ([fly.toml](fly.toml)), app `sensor-manager-nullpointer84`, region `arn`, scale-to-zero.
+- **Pipeline** ([ci.yml](.github/workflows/ci.yml)): `backend-tests`, `web-build`, and `docker-build` run on every PR and push to `main`; `deploy` runs only on green `main` pushes (or manual `workflow_dispatch`). The only secret is `FLY_API_TOKEN` in GitHub Actions Secrets — never commit credentials.
+- `backend/gradlew` lacks the Unix exec bit in git; CI and the Dockerfile `chmod +x` it before use.
+
 ## Working with this repo
 
 - **Do not commit, push, or open PRs.** The user owns all git operations (staging, committing, pushing, branching, PRs). Make changes to the working tree and stop there — describe what you did and let the user handle version control. This applies even when explicitly asked by tooling like a `/create-pr` command; defer to the user instead.
@@ -129,4 +141,3 @@ These are open and should be raised with the user before being chosen unilateral
 - **Production database** — when we replace the JSON snapshot. Original data is MySQL; staying with MySQL is the path of least resistance, but Postgres is also fine.
 - **Sensor ingest transport** (HTTP push, MQTT, or both) — no write path exists yet.
 - **Auth** — the public landing API is intentionally open; any admin/management UI is undecided.
-- **Deployment target** (container, JAR, cloud).
