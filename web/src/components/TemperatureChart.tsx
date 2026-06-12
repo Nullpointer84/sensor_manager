@@ -13,7 +13,7 @@ export default function TemperatureChart() {
   const series = useMemo(() => buildSeries(state.status === "ok" ? state.data : []), [state]);
 
   return (
-    <section className="section">
+    <section id="temperature" className="section">
       <header className="section-header">
         <h2>Indoor temperature trend</h2>
         <p>Daily mean temperature per location, last 30 days of recorded data.</p>

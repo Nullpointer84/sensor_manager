@@ -9,7 +9,7 @@ export default function LocationCards() {
   const state = useApi(fetcher);
 
   return (
-    <section className="section">
+    <section id="latest" className="section">
       <header className="section-header">
         <h2>Latest readings</h2>
         <p>One snapshot per location, taken from the most recently reporting device.</p>

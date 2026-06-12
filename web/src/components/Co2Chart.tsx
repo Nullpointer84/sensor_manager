@@ -13,7 +13,7 @@ export default function Co2Chart() {
   const series = useMemo(() => buildSeries(state.status === "ok" ? state.data : []), [state]);
 
   return (
-    <section className="section">
+    <section id="air" className="section">
       <header className="section-header">
         <h2>Air quality (CO₂)</h2>
         <p>Daily mean CO₂ concentration per location. Lower is better — values above 1,000 ppm indicate poor ventilation.</p>
