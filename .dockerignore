@@ -1,0 +1,28 @@
+# Keep the build context to backend/ and web/ sources only.
+.git
+.github
+.claude
+.idea
+.vscode
+
+# Not needed in the image: the dump is parsed offline; its JSON output is
+# already committed under backend/src/main/resources/data/.
+database/
+tools/
+
+# Local build output — both are rebuilt inside the Docker stages.
+web/node_modules/
+web/dist/
+backend/build/
+backend/.gradle/
+backend/src/main/resources/static/
+**/*.tsbuildinfo
+
+# Docs & misc
+*.md
+LICENSE
+.gitignore
+.dockerignore
+fly.toml
+**/.DS_Store
+**/Thumbs.db
